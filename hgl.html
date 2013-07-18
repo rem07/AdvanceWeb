@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+
+  body {
+   font: 24px Helvetica;
+   background: #ccccff;
+  }
+
+  #main {
+   min-height: 800px;
+   margin: 0px;
+   padding: 0px;
+   display: -webkit-flex;
+   display:         flex;
+   -webkit-flex-flow: row;
+           flex-flow: row;
+   }
+ 
+  #main > nav {
+   margin: 4px;
+   padding: 5px;
+   border: 1px solid #8888bb;
+   border-radius: 7pt;
+   background-image: url(wood.png);
+   -webkit-flex: 1 6 20%;
+           flex: 1 6 20%;
+   -webkit-order: 1;
+           order: 1;
+   }
+
+
+  #main > article {
+   margin: 4px;
+   padding: 5px;
+   border: 1px solid #cccc33;
+   border-radius: 7pt;
+   background-color: transparent;
+   -webkit-flex: 3 1 60%;
+           flex: 3 1 60%;
+   -webkit-order: 2;
+           order: 2;
+   }
+  
+
+  #main > aside {
+   margin: 4px;
+   padding: 5px;
+   border: 1px solid #8888bb;
+   border-radius: 7pt;
+   background-image: url(wood.png);
+   
+   -webkit-flex: 1 6 20%;
+           flex: 1 6 20%;
+   -webkit-order: 3;
+           order: 3;
+   }
+ 
+  header {
+   display: block;
+   margin: 4px;
+   padding: 5px;
+   min-height: 168px;
+   border: 1px solid #eebb55;
+   border-radius: 7pt;
+   background-image: url(1.jpg);
+   -webkit-flex: 1 6 10%;
+           flex: 1 6 10%;
+   }
+
+   footer {
+   display: block;
+   margin: 4px;
+   padding: 5px;
+   min-height: 180px;
+   border: 1px solid #eebb55;
+   border-radius: 7pt;
+   background-image: url(11.jpg);
+   background-size: auto;
+
+  }
+ 
+  /* Too narrow to support three columns */
+ @media all and (max-width: 640px){
+    #main, #page
+      {
+      -webkit-flex-flow: column;
+          flex-flow: column;
+      }
+      
+
+    #main > nav, #main > article, #main >aside
+      {
+        -webkit-order: 0;
+          order: 0;
+      }
+
+    #main > header
+      {
+      min-height: auto;
+      max-height: auto;
+      }
+
+    #main > footer
+      {
+      min-height: auto;
+      max-height: auto;
+      }
+    
+    #main > article
+      {
+      min-height: 6000px;
+      max-height: auto;
+
+      }
+
+    #main > nav
+      {
+      min-height: 1400px;
+      max-height: auto; 
+      }
+      
+    #main >aside
+      {
+      min-height: 1400px;
+      max-height: auto; 
+      }
+      
+  }
+
+ </style>
+
+  </head>
+  <body>
+  
+ <header><center><font size = "20px" color = "white", weight = "bold">CHESS.EDU</font></center>
+ </header>
+
+ <div id='main'>
+    <article><CENTER>CHESS BASICS</CENTER>
+    
+<BR><FONT WEIGHT = "BOLD">Setup
+</FONT></BR>
+<BR>Chess is played on a square board of eight rows (called ranks and denoted with numbers 1 to 8) and eight columns (called files and denoted with letters a to h) of squares. The colors of the 64 squares alternate and are referred to as "light squares" and "dark squares". The chessboard is placed with a light square at the right-hand end of the rank nearest to each player, and the pieces are set out as shown in the diagram, with each queen on its own color.
+<BR>The pieces are divided, by convention, into white and black sets. The players are referred to as "White" and "Black", and each begins the game with 16 pieces of the specified color. These consist of one king, one queen, two rooks, two bishops, two knights, and eight pawns.
+<BR>
+
+<BR>Movement
+  <BR>
+<BR>White always moves first. After the initial move, the players alternately move one piece at a time (with the exception of castling, when two pieces are moved). Pieces are moved to either an unoccupied square or one occupied by an opponent's piece, which is captured and removed from play. With the sole exception of en passant, all pieces capture opponent's pieces by moving to the square that the opponent's piece occupies. A player may not make any move that would put or leave his king under attack. If the player to move has no legal moves, the game is over; it is either a checkmate (a loss for the player with no legal moves) if the king is under attack, or a stalemate (a draw) if the king is not.
+<BR>Each chess piece has its own style of moving. In the diagrams, the dots mark the squares where the piece can move if no other pieces (including one's own piece) are on the squares between the piece's initial position and its destination.
+
+  
+    </article>
+    <nav><font COLOR = "WHITE"  WEIGHT = "BOLD">CHESS PIECES'</font>
+      <UL>
+          <LI><A HREF="http://en.wikipedia.org/wiki/King_(chess)">KING</a></LI>
+          <LI><a href="http://en.wikipedia.org/wiki/Queen_(chess)">QUEEN</a></LI>
+          <LI><a href="http://en.wikipedia.org/wiki/Bishop_(chess)">BISHOP</a></LI>
+          <LI><a href="http://en.wikipedia.org/wiki/Rook_(chess)">ROOK</a></LI>
+          <LI><a href="http://en.wikipedia.org/wiki/Knight_(chess)">KNIGHT</a></LI>
+          <LI><a href="http://en.wikipedia.org/wiki/Pawn_(chess)">PAWN</a></LI>
+      </UL>
+    </nav>
+    <aside><FONT COLOR = "WHITE" WEIGHT = "BOLD">MONTHLY TOP 100 CHESS PLAYER</FONT>
+      <UL>
+          <li><a href="http://ratings.fide.com/toparc.phtml?cod=265">JULY 2013</A></li>
+          <li><a href="http://ratings.fide.com/toparc.phtml?cod=261">JUNE 2013</A></li>
+          <li><a href="http://ratings.fide.com/toparc.phtml?cod=257">MAY 2013</A></li>
+          <li><a href="http://ratings.fide.com/toparc.phtml?cod=253">APRIL 2013 </A></li>
+          <li><a href="http://ratings.fide.com/toparc.phtml?cod=249">MARCH 2013</A></li>
+          <li><a href="http://ratings.fide.com/toparc.phtml?cod=245">FEBRUARY 2013</A></li>
+          <li><a href="http://ratings.fide.com/toparc.phtml?cod=241">JANUARY 2013</A></li>
+      </UL>
+    </aside>
+
+ </div>
+
+ <footer></footer>
+
+  
+  </body>
+</html>
